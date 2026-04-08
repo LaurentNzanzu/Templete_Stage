@@ -1281,3 +1281,40 @@ body.menu-open {
     font-size: 12px;
   }
 }
+
+/* Correction : empêche le texte quote d'apparaître dans le hero */
+.hero .quote {
+  display: none;
+}
+
+/* Force chaque section à rester séparée */
+.hero {
+  position: relative;
+  z-index: 2;
+  isolation: isolate;
+}
+
+.about {
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
+  background: var(--bg);
+}
+
+.about .quote {
+  display: block;
+  position: relative;
+  color: black;
+  z-index: auto;
+  font-size: 11px;
+  font-weight: normal;
+  font-style: italic;
+  opacity: 0.8;
+  max-width: 80%;
+  margin: 10px auto 0;
+}
+
+/* S'assure que rien ne dépasse de la section about */
+.about {
+  overflow-x: hidden;
+}
