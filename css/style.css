@@ -1,7 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-
 :root {
   --bg: #ffffff;
   --text: #314862;
@@ -503,21 +499,15 @@ body.menu-open {
 
 .progress-fill {
   height: 100%;
-  width: 0;
   background: linear-gradient(90deg, var(--accent), #3a8fd9);
   border-radius: 10px;
-  transition: width 1.5s ease-in-out; 
-}
-.skill-box.aos-animate .progress-fill {
-    width: var(--w);
-    transition-delay: 0.5s; 
 }
 
 .skills-sidebar {
   background: white;
   padding: 30px;
   border-radius: 15px;
-  height: 100%;
+  height: fit-content;
   position: sticky;
   top: 100px;
 }
@@ -626,27 +616,15 @@ body.menu-open {
   position: relative;
   padding-left: 30px;
 }
-[data-aos="fade-up-resume"] {
-  opacity: 0;
-  transform: translateY(100px);
-  transition-property: transform, opacity;
-}
-
-[data-aos="fade-up-resume"].aos-animate {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 
 .edu-timeline::before {
   content: '';
   position: absolute;
   left: 10px;
-  top: 0;
-  bottom: 0;
+  top: 20px;
+  bottom: 20px;
   width: 2px;
   background: var(--accent);
-  opacity: 0.3;
 }
 
 .edu-item {
@@ -1367,7 +1345,6 @@ body.menu-open {
 .about {
   overflow-x: hidden;
 }
-<<<<<<< HEAD
 
 .swiper-pagination-bullet {
   background: var(--accent);
@@ -1430,18 +1407,4 @@ body.menu-open {
   height: 100%;
   display: flex;
   flex-direction: column;
-=======
-.certifications[data-aos="fade-up"] {
-  transform: translateY(150px); /* Plus bas que les 100px par défaut */
-}
-.certifications.aos-animate {
-  transform: translateY(0);
-}
-.skill-box.aos-animate .progress-fill {
-  /* On définit la largeur finale ici ou via une variable */
-  transition: width 1.5s ease-in-out;
-}
-.skill-box[data-aos-delay="400"].aos-animate .progress-fill {
-  transition-delay: 0.4s; /* Elles attendent que la carte soit posée pour démarrer */
->>>>>>> da766a2174399f25580281c9494b9963baa0294d
 }
