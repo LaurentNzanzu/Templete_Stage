@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     offset: 100,
     easing: 'ease-out-cubic'
   });
-
+// Initialize Swiper for testimonials
   const testimonialSwiper = new Swiper('.testimonials-slider .swiper', {
     slidesPerView: 1,
     spaceBetween: 20,
