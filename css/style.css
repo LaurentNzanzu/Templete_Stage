@@ -628,7 +628,7 @@ body.menu-open {
 }
 [data-aos="fade-up-resume"] {
   opacity: 0;
-  transform: translateY(100px); /* On part de plus bas (100px au lieu de 50px) */
+  transform: translateY(100px);
   transition-property: transform, opacity;
 }
 
