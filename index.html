@@ -4,7 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Style - Creative Developer Portfolio</title>
-  
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   
@@ -15,24 +20,6 @@
 </head>
 <body>
 
-  <!--header class="header">
-    <div class="container">
-      <div class="header-inner">
-        <div class="logo">
-          <img src="./img/logo-bootstrap.png" alt="Style">
-          <h1>Style</h1>
-        </div>
-
-     
-
-        <button class="mobile-toggle" aria-label="Menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </button>
-      </div>
-    </div>
-  </header-->
 
   <div class="mobile-nav">
     <ul>
@@ -546,59 +533,16 @@
         </div>
       </div>
     </section>
-
-    <section id="testimonials" class="testimonials">
-      <div class="container">
-        <div class="section-header">
-          <h2>Testimonials</h2>
-          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-        </div>
-
-        <div class="critic-reviews">
-          <div class="critic-grid">
-            <div class="critic-card">
-              <div class="quote">"</div>
-              <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <p>Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
-              <div class="critic-name">The New York Times</div>
-            </div>
-            <div class="critic-card">
-              <div class="quote">"</div>
-              <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </div>
-              <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla quis lorem ut libero malesuada feugiat.</p>
-              <div class="critic-name">Washington Post</div>
-            </div>
-            <div class="critic-card">
-              <div class="quote">"</div>
-              <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
-              <div class="critic-name">The Guardian</div>
-            </div>
+      <section id="testimonials" class="testimonials">
+        <div class="container">
+          <div class="section-header" data-aos="fade-right">
+            <h2>Testimonials</h2>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
           </div>
-        </div>
-
-        <div class="testimonials-slider">
-          <div class="slider-container">
-            <div class="slider-track">
-              <div class="testimonial-card">
+          <div class="critic-reviews">
+            <div class="critic-grid">
+              <div class="critic-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="quote">"</div>
                 <div class="stars">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -606,27 +550,11 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                 </div>
-                <p>Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
-                <div class="profile">
-                  <img src="./img/person-f-1.webp" alt="Jane Smith">
-                  <div><h4>Jane Smith</h4><span>Book Enthusiast</span></div>
-                </div>
+                <p>Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+                <div class="critic-name">The New York Times</div>
               </div>
-              <div class="testimonial-card">
-                <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-                <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Cras ultricies ligula sed magna.</p>
-                <div class="profile">
-                  <img src="./img/person- 2.webp" alt="Michael Johnson">
-                  <div><h4>Michael Johnson</h4><span>Sci-Fi Blogger</span></div>
-                </div>
-              </div>
-              <div class="testimonial-card">
+              <div class="critic-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="quote">"</div>
                 <div class="stars">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -634,13 +562,11 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star-half-alt"></i>
                 </div>
-                <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Cras ultricies ligula sed magna.</p>
-                <div class="profile">
-                  <img src="./img/Emily.webp" alt="Emily Davis">
-                  <div><h4>Emily Davis</h4><span>Book Club President</span></div>
-                </div>
+                <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla quis lorem ut libero malesuada feugiat.</p>
+                <div class="critic-name">Washington Post</div>
               </div>
-              <div class="testimonial-card">
+              <div class="critic-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="quote">"</div>
                 <div class="stars">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -648,36 +574,103 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                 </div>
-                <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui.</p>
-                <div class="profile">
-                  <img src="./img/Robert wil.webp" alt="Robert Wilson">
-                  <div><h4>Robert Wilson</h4><span>Literary Reviewer</span></div>
-                </div>
+                <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+                <div class="critic-name">The Guardian</div>
               </div>
             </div>
           </div>
-          <div class="slider-dots"></div>
-        </div>
-
-        <div class="overall-rating">
-          <div class="rating-number">4.8</div>
-          <div class="rating-stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
+          <div class="testimonials-slider">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <p>Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+                    <div class="profile">
+                      <img src="./img/person-f-1.webp" alt="Jane Smith">
+                      <div><h4>Jane Smith</h4><span>Book Enthusiast</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Cras ultricies ligula sed magna.</p>
+                    <div class="profile">
+                      <img src="./img/person- 2.webp" alt="Michael Johnson">
+                      <div><h4>Michael Johnson</h4><span>Sci-Fi Blogger</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Cras ultricies ligula sed magna.</p>
+                    <div class="profile">
+                      <img src="./img/Emily.webp" alt="Emily Davis">
+                      <div><h4>Emily Davis</h4><span>Book Club President</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui.</p>
+                    <div class="profile">
+                      <img src="./img/Robert wil.webp" alt="Robert Wilson">
+                      <div><h4>Robert Wilson</h4><span>Literary Reviewer</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
-          <p>Based on 230+ reviews</p>
-          <div class="rating-platforms">
-            <span>Goodreads</span>
-            <span>Amazon</span>
-            <span>Barnes & Noble</span>
+
+          <!-- Overall Rating (conservé) -->
+          <div class="overall-rating" data-aos="zoom-in" data-aos-delay="500">
+            <div class="rating-number">4.8</div>
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>Based on 230+ reviews</p>
+            <div class="rating-platforms">
+              <span>Goodreads</span>
+              <span>Amazon</span>
+              <span>Barnes & Noble</span>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
+      </section>
+   
     <section id="faq" class="faq">
       <div class="container">
         <div class="section-header">
@@ -792,6 +785,6 @@
 
   <a href="#" class="scroll-top"><i class="fas fa-arrow-up"></i></a>
 
-  <script src="./css/js/main.js"></script>
+  <script src="./script/scriptPort_Test.js"></script>
 </body>
 </html>
