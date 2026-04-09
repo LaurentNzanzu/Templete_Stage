@@ -1013,7 +1013,7 @@ body.menu-open {
   color: var(--accent);
 }
 
-.faq-item .faq-toggle i {
+.faq-item.active .faq-toggle i {
   transform: rotate(90deg);
 }
 
@@ -1106,6 +1106,21 @@ body.menu-open {
 
 .contact-form button i {
   margin-left: 8px;
+}
+
+.form-status {
+  min-height: 24px;
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-status.is-success {
+  color: #1f7a1f;
+}
+
+.form-status.is-error {
+  color: #b42318;
 }
 
 .footer {
