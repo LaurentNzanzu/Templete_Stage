@@ -59,8 +59,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 			if (recipient === '' || name === '' || email === '' || subject === '' || message === '') {
 				formStatus.textContent = 'Merci de remplir tous les champs avant l\'envoi.';
-				formStatus.classList.add('is-error');
-				formStatus.classList.remove('is-success');
+				formStatus.classList.add('error');
+				formStatus.classList.remove('success');
 				return;
 			}
 
@@ -75,8 +75,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
 			formStatus.textContent = 'Votre application mail va s\'ouvrir pour envoyer le message.';
-			formStatus.classList.add('is-success');
-			formStatus.classList.remove('is-error');
+			formStatus.classList.add('success');
+			formStatus.classList.remove('error');
 
 			ouvrirMessagerie(mailtoLink);
 		});
