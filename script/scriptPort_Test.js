@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
       this.style.transform = 'translateY(-25px)';
     });
   });
-  
+  //pour evite de zoom
   let resizeTimer;
   window.addEventListener('resize', () => {
     clearTimeout(resizeTimer);
