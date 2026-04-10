@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     offset: 100,
     easing: 'ease-out-cubic'
   });
-
+// Initialize Swiper for testimonials
   const testimonialSwiper = new Swiper('.testimonials-slider .swiper', {
     slidesPerView: 1,
     spaceBetween: 20,
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
       this.style.transform = 'translateY(-25px)';
     });
   });
-  
+  //pour evite de zoom
   let resizeTimer;
   window.addEventListener('resize', () => {
     clearTimeout(resizeTimer);
